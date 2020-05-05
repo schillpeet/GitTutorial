@@ -31,9 +31,15 @@ Branch erstellen und wechselt auch sofort in diesen:
 Branches anzeigen lassen:
 `<git branch>`
 
-Branch auf den Server pushen mit Upstream:
-(nach *git add README.md* und *git commit -m "was auch immer"*)
+Branch auf den Server pushen mit Upstream
+(nach *git add README.md* und *git commit -m "was auch immer"*):
+
 `<git push --set-upstream origin README_Info>`
 
 Branch in den master wechseln:
 `<git checkout master>`
+
+### Mergen
+`<git merge README_Info>`
+
+Beide Branches sind jetzt zusammen gesetzt worden.
