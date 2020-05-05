@@ -22,3 +22,10 @@ As Kanye West said:
 ### Inline code
 I think you should use an
 `<addr>` element here instead.
+
+
+
+Git stash Funktion
+
+
+Jetzt in der Branch README_Info.
