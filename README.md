@@ -22,3 +22,18 @@ As Kanye West said:
 ### Inline code
 I think you should use an
 `<addr>` element here instead.
+
+
+### Branches
+Branch erstellen und wechselt auch sofort in diesen:
+`<git checkout -b "README_Info">`
+
+Branches anzeigen lassen:
+`<git branch>`
+
+Branch auf den Server pushen mit Upstream:
+(nach *git add README.md* und *git commit -m "was auch immer"*)
+`<git push --set-upstream origin README_Info>`
+
+Branch in den master wechseln:
+`<git checkout master>`
