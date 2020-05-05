@@ -8,7 +8,7 @@ $ git commit -m "Mein Kommentar"
 $ git push
 
 ### Mastering Markdown
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to MasterinkMarkdown!] (https://guides.github.com/features/mastering-markdown/)
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to MasterinkMarkdown](https://guides.github.com/features/mastering-markdown/)
 
 ### Dateien vom Server holen
 #### im neu erstellten Verzeichnis
