@@ -13,3 +13,12 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 ### Dateien vom Server holen
 #### im neu erstellten Verzeichnis
 $ git clone https://github.com/schillpeet/GitTutorial
+
+### Blockquotes
+As Kanye West said:
+> We're living the future so
+> the present is our past.
+
+### Inline code
+I think you should use an
+`<addr>` element here instead.
