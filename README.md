@@ -32,10 +32,19 @@ Branches anzeigen lassen:<br>
 Um in den main branch wieder zu wechseln:<br>
 `$ git checkout main`
 
-Branch auf den Server pushen mit Upstream
-(nach *git add README.md* und *git commit -m "was auch immer"*):
+## Änderungen
+Wenn wir eine neue Datei erstellt oder verändert haben, dann benutzen wir fol Kommando:<br>
+`$ git add neueDatei`
+(dadurch steht die Datei in einer besonderen Position, durch fol Kommando machen wir die Änderung offiziell)<br>
+`$ git commit`
+oder<br>
+`$ git commit -m "mein Kommentar"`
 
-`<git push --set-upstream origin README_Info>`
+Mit diesem Kommando fragen wir ab, ob alle Veränderungen unseres branches, die wir gemacht haben, auch schon hochgeladen haben:<br>
+`$ git status`
+
+Branch auf den Server pushen mit Upstream:<br>
+`git push --set-upstream origin branchName`
 
 Branch in den master wechseln:
 `<git checkout master>`
