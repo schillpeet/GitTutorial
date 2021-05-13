@@ -17,16 +17,16 @@ Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das 
 
 ### Branches
 #### Um nicht erstmal in einer Sicherheitskopie zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
-Erstellten branch nennen wir hier 'test':
+Erstellten branch nennen wir hier 'test':<br>
 `$ git branch test`
 
 So wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt<br>
 `$ git checkout test`
 
-Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:
+Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
 `$ git checkout -b test`
 
-Branches anzeigen lassen:
+Branches anzeigen lassen:<br>
 `$ git branch`
 
 Um in den main branch wieder zu wechseln:<br>
