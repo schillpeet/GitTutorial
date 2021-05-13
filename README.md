@@ -18,11 +18,11 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 ### Branches
 #### Um nicht erstmal in einer Sicherheitskopie zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
-$ git branch test     // erstellter branch nennen wir hier 'test'
-$ git checkout test   // so wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt
+`$ git branch test`     // erstellter branch nennen wir hier 'test'
+`$ git checkout test`   // so wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt
 
 // Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:
-$ git checkout -b test
+`$ git checkout -b test`
 
 Branches anzeigen lassen:
 `<git branch>`
