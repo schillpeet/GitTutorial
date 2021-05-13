@@ -10,19 +10,19 @@ Tutorial for beginner [see](https://boolie.org/git-github-anfaenger-tutorial/)
 ### Mastering Markdown
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to MasterinkMarkdown](https://guides.github.com/features/mastering-markdown/)
 
-### Repo, was man sich wünscht, zu sich nehmen
+## Repo, was man sich wünscht, zu sich nehmen
 Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das du bearbeiten willst:
 1. `fork anklicken`
 2. `$ git clone https://github.com/schillpeet/GitTutorial`
 
-### Branches
-#### Um nicht erstmal in einer Sicherheitskopie (original Datei) zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
+## Branches
+### Um nicht erstmal in einer Sicherheitskopie (original Datei) zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
 Erstellten branch nennen wir hier 'test':<br>
 `$ git branch test`
 
 So wechseln wir in den Branch 'test' rein.<br>
 `$ git checkout test`<br>
-> OUTPUT: 
+> OUTPUT: <br>
 > zu Branch 'test' gewechselt
 
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
@@ -52,10 +52,11 @@ Branch auf den Server pushen mit Upstream:<br>
 **Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:
 `$ git remote -v`<br>
 > OUTPUT example:<br>
-> origin  https://github.com/schillpeet/cloud_haiku.git (fetch)
-> origin  https://github.com/schillpeet/cloud_haiku.git (push)
+> origin  https://github.com/schillpeet/cloud_haiku.git (fetch)<br>
+> origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
 
-
+Nun geben wir einen neuen remote Repo upstream an, der mit dem fork synchronisiert mittels **git remote add**<br>
+`$ git remote add upstream https://github.com/original-owner-username/original-repository.git`
 
 
 Branch in den master wechseln:
