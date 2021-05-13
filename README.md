@@ -22,7 +22,7 @@ Erstellten branch nennen wir hier 'test':<br>
 
 So wechseln wir in den Branch 'test' rein.<br>
 `$ git checkout test`<br>
-> OUTPUT: <br>
+> OUTPUT:<br>
 > zu Branch 'test' gewechselt
 
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
@@ -49,22 +49,29 @@ Branch auf den Server pushen mit Upstream:<br>
 `git push --set-upstream origin branchName`
 
 ## Kollaboration - Arbeiten mit anderen:
-**Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:
+**Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:<br>
 `$ git remote -v`<br>
-> OUTPUT example:<br>
+> OUTPUT:<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (fetch)<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
 
-Nun geben wir einen neuen remote Repo upstream an, der mit dem fork synchronisiert mittels **git remote add**<br>
+Nun geben wir einen neuen remote Repo upstream an, der mit dem fork synchronisiert mittels **git remote add**. Dadurch erhalten wir eine Referenz zum original Repo auf github<br>
 `$ git remote add upstream https://github.com/original-owner-username/original-repository.git`<br>
 Konkret (bspw):<br>
 `$ git remote add upstream https://github.com/do-community/cloud_haiku.git`<br>
 
-> OUTPUT<br>
+> OUTPUT: $ git remote -v<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (fetch)<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
 > upstream        https://github.com/do-community/cloud_haiku.git (fetch)<br>
 > upstream        https://github.com/do-community/cloud_haiku.git (push)<br>
+
+Um nun den fork aus unserem Arbeitsverzeichnis heraus zu synchronisieren, verwenden wir:<br>
+`$ git fetch upstream`<br>
+> OUTPUT:<br>
+> Von https://github.com/do-community/cloud_haiku
+ * [neuer Branch]    ltagliaferri-patch-1 -> upstream/ltagliaferri-patch-1
+ * [neuer Branch]    master               -> upstream/master
 
 
 Branch in den master wechseln:
