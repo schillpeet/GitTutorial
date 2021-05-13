@@ -11,7 +11,7 @@ Tutorial for beginner [see](https://boolie.org/git-github-anfaenger-tutorial/)
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to MasterinkMarkdown](https://guides.github.com/features/mastering-markdown/)
 
 ### Repo, was man sich wünscht, zu sich nehmen
-// gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das du bearbeiten willst:
+Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das du bearbeiten willst:
 1. `fork anklicken`
 2. `$ git clone https://github.com/schillpeet/GitTutorial`
 
@@ -20,7 +20,7 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 Erstellten branch nennen wir hier 'test':
 `$ git branch test`
 
-So wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt
+So wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt<br>
 `$ git checkout test`
 
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:
@@ -28,6 +28,9 @@ Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen
 
 Branches anzeigen lassen:
 `$ git branch`
+
+Um in den main branch wieder zu wechseln:<br>
+`$ git checkout main`
 
 Branch auf den Server pushen mit Upstream
 (nach *git add README.md* und *git commit -m "was auch immer"*):
