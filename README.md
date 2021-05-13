@@ -12,7 +12,20 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 ### Dateien vom Server holen
 #### im neu erstellten Verzeichnis
-$ git clone https://github.com/schillpeet/GitTutorial
+// gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das du bearbeiten willst:
+1. fork anklicken
+2. $ git clone https://github.com/schillpeet/GitTutorial
+
+### Branches
+#### Um nicht erstmal in einer Sicherheitskopie zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
+$ git branch test     // erstellter branch nennen wir hier 'test'
+$ git checkout test   // so wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt
+
+// Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:
+$ git checkout -b test
+
+Branches anzeigen lassen:
+`<git branch>`
 
 ### Blockquotes
 As Kanye West said:
