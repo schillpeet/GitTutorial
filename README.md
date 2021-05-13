@@ -17,13 +17,16 @@ Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das 
 
 ## Branches
 ### Um nicht erstmal in einer Sicherheitskopie (original Datei) zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
-Erstellten branch nennen wir hier 'test':<br>
+Erstellte einen neuen branch (hier) namens 'test':<br>
 `$ git branch test`
 
-So wechseln wir in den Branch 'test' rein.<br>
+Branches wechseln, hier in den branch 'test' rein.<br>
 `$ git checkout test`<br>
 > OUTPUT:<br>
-> zu Branch 'test' gewechselt
+> zu Branch 'test' gewechselt<br>
+
+In den branch master wechseln:<br>
+`$ git checkout master`
 
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
 `$ git checkout -b test`
@@ -73,14 +76,17 @@ Um nun den fork aus unserem Arbeitsverzeichnis heraus zu synchronisieren, verwen
 >  * [neuer Branch]    ltagliaferri-patch-1 -> upstream/ltagliaferri-patch-1
 >  * [neuer Branch]    master               -> upstream/master
 
+Anm. (laut Tutorial): eig sollte in der letzten Zeile "main -> upstream/main" stehen und, dass commits nun in der lokalen branch upstream/main liegen sollen. Als nächstes soll man dann in den main branch wechseln. Allerdings steht ja bei mir "master -> upstream/master". Ich kann also in den master branch wechseln, aber nicht in den main branch:<br>
+`$ git checkout main` (eigentlich)<br>
+`$ git checkout master` (funktioniert allerdings nur)<br>
 
-Branch in den master wechseln:
-`<git checkout master>`
+##  Mergen
+`$ git merge upstream/main`<br>
+bzw.
+`$ git merge upstream/master`<br>
+> OUTPUT:<br>
+> Bereits aktuell.<br>
 
-### Mergen
-`<git merge README_Info>`
-
-Beide Branches sind jetzt zusammen gesetzt worden.
 
 ### Blockquotes
 As Kanye West said:
