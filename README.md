@@ -28,14 +28,14 @@ Branches wechseln, hier in den branch 'test' rein.<br>
 In den branch master wechseln:<br>
 `$ git checkout master`
 
+Um in den main branch wieder zu wechseln:<br>
+`$ git checkout main`
+
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
 `$ git checkout -b test`
 
 Branches anzeigen lassen:<br>
 `$ git branch`
-
-Um in den main branch wieder zu wechseln:<br>
-`$ git checkout main`
 
 ## Änderungen
 Wenn wir eine neue Datei erstellt oder verändert haben, dann benutzen wir fol Kommando:<br>
@@ -49,6 +49,7 @@ Mit diesem Kommando fragen wir ab, ob alle Veränderungen unseres branches, die 
 `$ git status`
 
 Branch auf den Server pushen mit Upstream:<br>
+Bevor man die Datei pushed, sollte man überprüfen, ob sich etwas verändert hat (s.nächstes Kapitel) oder führe die Kommandos ($git remote add upstream https://...; $git fetch upstream; $git merge upstream/master) durch.<br>
 `git push --set-upstream origin branchName`
 
 ## Kollaboration - Arbeiten mit anderen:
