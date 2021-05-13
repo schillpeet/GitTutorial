@@ -34,9 +34,9 @@ Um in den main branch wieder zu wechseln:<br>
 
 ## Änderungen
 Wenn wir eine neue Datei erstellt oder verändert haben, dann benutzen wir fol Kommando:<br>
-`$ git add neueDatei`
+`$ git add neueDatei`<br>
 (dadurch steht die Datei in einer besonderen Position, durch fol Kommando machen wir die Änderung offiziell)<br>
-`$ git commit`
+`$ git commit`<br>
 oder<br>
 `$ git commit -m "mein Kommentar"`
 
@@ -45,6 +45,13 @@ Mit diesem Kommando fragen wir ab, ob alle Veränderungen unseres branches, die 
 
 Branch auf den Server pushen mit Upstream:<br>
 `git push --set-upstream origin branchName`
+
+## Kollaboration - Arbeiten mit anderen:
+**Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:
+`$ git remote -v`<br>
+OUTPUT example:<br>
+origin  https://github.com/schillpeet/cloud_haiku.git (fetch)
+origin  https://github.com/schillpeet/cloud_haiku.git (push)
 
 Branch in den master wechseln:
 `<git checkout master>`
