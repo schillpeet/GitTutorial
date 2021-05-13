@@ -56,7 +56,15 @@ Branch auf den Server pushen mit Upstream:<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
 
 Nun geben wir einen neuen remote Repo upstream an, der mit dem fork synchronisiert mittels **git remote add**<br>
-`$ git remote add upstream https://github.com/original-owner-username/original-repository.git`
+`$ git remote add upstream https://github.com/original-owner-username/original-repository.git`<br>
+Konkret (bspw):<br>
+`$ git remote add upstream https://github.com/do-community/cloud_haiku.git`<br>
+
+> OUTPUT<br>
+> origin  https://github.com/schillpeet/cloud_haiku.git (fetch)<br>
+> origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
+> upstream        https://github.com/do-community/cloud_haiku.git (fetch)<br>
+> upstream        https://github.com/do-community/cloud_haiku.git (push)<br>
 
 
 Branch in den master wechseln:
