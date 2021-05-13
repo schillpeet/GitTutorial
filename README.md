@@ -16,12 +16,14 @@ Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das 
 2. `$ git clone https://github.com/schillpeet/GitTutorial`
 
 ### Branches
-#### Um nicht erstmal in einer Sicherheitskopie zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
+#### Um nicht erstmal in einer Sicherheitskopie (original Datei) zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
 Erstellten branch nennen wir hier 'test':<br>
 `$ git branch test`
 
-So wechseln wir in den Branch 'test' rein. OUTPUT: zu Branch 'test' gewechselt<br>
-`$ git checkout test`
+So wechseln wir in den Branch 'test' rein.<br>
+`$ git checkout test`<br>
+> OUTPUT: 
+> zu Branch 'test' gewechselt
 
 Anm.: mit fol Kommando kann man einen Branch erstellen und direkt auch in diesen wechseln:<br>
 `$ git checkout -b test`
@@ -49,9 +51,12 @@ Branch auf den Server pushen mit Upstream:<br>
 ## Kollaboration - Arbeiten mit anderen:
 **Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:
 `$ git remote -v`<br>
-OUTPUT example:<br>
-origin  https://github.com/schillpeet/cloud_haiku.git (fetch)
-origin  https://github.com/schillpeet/cloud_haiku.git (push)
+> OUTPUT example:<br>
+> origin  https://github.com/schillpeet/cloud_haiku.git (fetch)
+> origin  https://github.com/schillpeet/cloud_haiku.git (push)
+
+
+
 
 Branch in den master wechseln:
 `<git checkout master>`
