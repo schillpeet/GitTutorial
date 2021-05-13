@@ -52,13 +52,19 @@ Branch auf den Server pushen mit Upstream:<br>
 `git push --set-upstream origin branchName`
 
 ## Kollaboration - Arbeiten mit anderen:
-**Remote repositories** manchen die gemeinsame Arbeit möglich. Liste alle remote Repos auf:<br>
+**Remote repositories** manchen die gemeinsame Arbeit möglich. D.h. wenn wir die Datei geforked haben, sie bearbeitet, sie geadded und committed haben, dann müssen wir ja jetzt wissen, ob sich die Datei zwischenzeitlich schon mal geändert hat. Dies erfolgt mittels remote<br> 
+
+Liste alle remote Repos auf:<br>
 `$ git remote -v`<br>
 > OUTPUT:<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (fetch)<br>
 > origin  https://github.com/schillpeet/cloud_haiku.git (push)<br>
 
-Nun geben wir einen neuen remote Repo upstream an, der mit dem fork synchronisiert mittels **git remote add**. Dadurch erhalten wir eine Referenz zum original Repo auf github<br>
+Nun geben wir einen neuen remote Repo upstream an, der mit dem fork mittels **git remote add** synchronisiert. Dadurch erhalten wir eine Referenz auf das aktuelle Repo. Hierbei ist nur wichtig, dass wir den original-owner-username sowie das original-repo am Ende hinschreiben. Wenn sich nichts geändert hat, dann können wir direkt weiter machen mit **fetch** und anschließend **mergen**. 
+Falls sich etwas verändert hat:<br>
+> `$ git checkout neueDatei` ("neueDatei" ist der Name von dem branch den wir geadded haben)<br>
+> `$ git merge master`<br>
+
 `$ git remote add upstream https://github.com/original-owner-username/original-repository.git`<br>
 Konkret (bspw):<br>
 `$ git remote add upstream https://github.com/do-community/cloud_haiku.git`<br>
@@ -82,7 +88,7 @@ Anm. (laut Tutorial): eig sollte in der letzten Zeile "main -> upstream/main" st
 
 ##  Mergen
 `$ git merge upstream/main`<br>
-bzw.
+bzw. (master wird korrekt sein!)<br>
 `$ git merge upstream/master`<br>
 > OUTPUT:<br>
 > Bereits aktuell.<br>
