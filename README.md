@@ -70,8 +70,8 @@ Um nun den fork aus unserem Arbeitsverzeichnis heraus zu synchronisieren, verwen
 `$ git fetch upstream`<br>
 > OUTPUT:<br>
 > Von https://github.com/do-community/cloud_haiku
- * [neuer Branch]    ltagliaferri-patch-1 -> upstream/ltagliaferri-patch-1
- * [neuer Branch]    master               -> upstream/master
+>  * [neuer Branch]    ltagliaferri-patch-1 -> upstream/ltagliaferri-patch-1
+>  * [neuer Branch]    master               -> upstream/master
 
 
 Branch in den master wechseln:
