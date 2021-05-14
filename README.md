@@ -15,6 +15,10 @@ Gehe in das Verzeichnis, in dem du arbeiten möchtest und 'clone' das Repo, das 
 1. `fork anklicken`
 2. `$ git clone https://github.com/schillpeet/GitTutorial`
 
+### Forken von Projekten
+- wenn man keine Push-Berechtigung bei einem anderen Projekt hat, daran aber mitarbeiten / erweitern möchte, dann "forkt" man ein Projekt. D.h., GitHub erstellt eine Kopie des Projekts im eigenen Namensraum, indem man dann in seinem eigenen Verzeichnis pushen kann oder an den Projektersteller einen Pull-Request sendet
+- 
+
 ## Branches
 ### Um nicht erstmal in einer Sicherheitskopie (original Datei) zu arbeiten, erstellen wir ein Branch, den wir passend bezeichnen
 Erstellte einen neuen branch (hier) namens 'test':<br>
