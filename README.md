@@ -42,7 +42,7 @@ Branches anzeigen lassen:<br>
 `$ git branch`
 
 ## Änderungen
-Wenn wir eine neue Datei erstellt oder verändert haben, dann benutzen wir fol Kommando:<br>
+Wenn wir eine neue Datei (Branch) erstellt oder verändert haben, dann benutzen wir fol Kommando:<br>
 `$ git add neueDatei`<br>
 (dadurch steht die Datei in einer besonderen Position, durch fol Kommando machen wir die Änderung offiziell)<br>
 `$ git commit`<br>
