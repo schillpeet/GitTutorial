@@ -1,6 +1,8 @@
 # GitHub Tutorial
 Tutorial for beginner [see](https://boolie.org/git-github-anfaenger-tutorial/)
 
+Gutes Einstiegstutorial: https://lerneprogrammieren.de/git/
+
 ### Dateien auf den Server pushen
 1. $ git status
 2. $ git add README.md
